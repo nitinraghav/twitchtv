@@ -8,8 +8,8 @@ $(function() {
   //iterating through streamers array
   channels.forEach(function(channel) {
     function URL(type, name) {
-      return "https://wind-bow.hyperdev.space/twitch-api/" + type + "/" + name + "?callback=?";
-    }
+      return 'https://wind-bow.gomix.me/twitch-api/' + type + '/' + name + '?callback=?';
+    };
     //first JSON call("streams") to check if streamers are online or not
     $.getJSON(URL("streams", channel), function(data1) {
       //console.log(data1);
